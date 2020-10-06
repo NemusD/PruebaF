@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Documento</title>
+  </head>
+  <body>
+    <script>
+        var dias = parseInt(prompt("Ingrese cantidad de dias"))
+        if (dias > 0){
+            var year= Math.floor (dias/365)
+            var weeks= Math.floor ((dias%365) /7 );
+            var days= Math.floor ((dias%365)%12);
+
+            console.log (year,weeks,days);
+        }
+        else {
+            var dias= parseInt(prompt("Ingrese cantidad de días"))
+
+        }
+    </script>
+  </body>
+</html>
